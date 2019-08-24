@@ -1,0 +1,376 @@
+/* Background Image */
+:root {
+  background-position: center;
+  background-size: cover;
+  background-image: url(./images/pexels-lapTop.jpeg);
+}
+
+/* Background color */
+body {
+  background-color: rgba(0, 0, 0, 0.92);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 4%;
+  font-family: "Roboto", sans-serif;
+  color: lemonchiffon;
+  font-size: 100%
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The header styling */
+.top {
+  padding-top: 5%;
+}
+
+.nameAndJob {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.3vw;
+  word-spacing: 1vw;
+  color: lemonchiffon;
+}
+
+.nameAndJob::first-letter {
+  font-weight: 200%;
+  font-size: 160%;
+  color: lemonchiffon;
+  font-family: "Tillana", cursive;
+}
+
+.navDiv {
+  letter-spacing: 0.1vw;
+  word-spacing: 0.1vw;
+  font-family: "Orbitron", sans-serif;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+}
+
+.tag {
+  background-color: #ff006e;
+  margin-left: 3%;
+  border-radius: 6% 6% 6% 6%;
+  -webkit-transition: color 0.3s;
+  padding: 2%;
+}
+
+.hLink {
+  text-decoration: none;
+  color: aqua;
+  margin: 0%;
+}
+
+.hLink:visited {
+  color: lemonchiffon;
+} 
+
+.tag::before {
+  content: "";
+  background: lemonchiffon;
+  border-radius: 50%;
+  height: 20%;
+  /* position: absolute; */
+  width: 8%;
+  top: 37%;
+  left: -2%;
+  transition: all 0.5s linear;
+  text-decoration: none;
+}
+
+.tag:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.tag:hover {
+  background-color: rgb(129, 228, 36);
+  text-decoration-line: overline;
+  transition-property: background;
+  border-radius: 30%;
+  transform: translateY(2px);
+}
+
+/* Information About me */
+.myImg {
+  float: left;
+  padding: 1%;
+}
+
+.about {
+  padding: 0%;
+  letter-spacing: 0.1vw;
+  word-spacing: 0.2vw;
+}
+
+.about-h1 {
+  line-height: 130%;
+}
+
+.about-h1::first-letter {
+  font-weight: 20%;
+  font-size: 200%;
+  font-family: "Times New Roman", Times, serif;
+  color: lemonchiffon;
+}
+
+.aboutMe {
+  margin-top: 12%;
+}
+
+/* Testimony from people, plus their Linkedin links */
+.testimonials {
+  margin-top: 10%;
+}
+
+.testimonial {
+  letter-spacing: 0.1vw;
+  word-spacing: 0.1vw;
+  font-size: 120%;
+}
+
+#carousel {
+  width:60%;
+  margin-top: -2%;
+  margin-left: 13%;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#slides ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#slides li {
+  float:left;
+  text-align: center;
+  position: relative;
+}
+/* Styling for prev and next buttons */
+.btn-bar{
+  display: block;
+  position: relative;
+}
+
+#buttons a {
+  text-align:center;
+  display:block;
+  float:left;
+  margin:0 20%;
+  color: #ff006e;
+  text-decoration:none;
+  display:block;
+  font-size: 180%;
+}
+
+a#prev:hover, a#next:hover {
+color: fuchsia;
+}
+
+.quote-phrase, .quote-author {
+font-weight:300;
+display: table-cell;
+vertical-align: middle;
+}
+
+.quote-phrase {
+color:lemonchiffon;
+font-style:italic;
+}
+
+.quote-marks {
+font-size:300%;
+padding:0 3% 3%;
+position:inherit;
+}
+
+.quote-author {
+font-style:normal;
+font-size:150%;
+color: fuchsia;
+}
+
+.quoteContainer, .authorContainer {
+display: table;
+}
+
+.testimonialLink {
+  text-decoration: none;
+  color: aqua;
+  margin: 0%;
+  font-size: 80%;
+  font-family: "Tillana", cursive;
+}
+
+.testimonialLink:hover {
+  background-color: fuchsia;
+  color: black;
+  padding: 1%;
+}
+
+/* SKILLS */
+.skills-div {
+  margin-top: 9%;
+}
+
+.skills {
+  margin-top: 2%;
+}
+
+.skillsTag {
+  margin: 0% 0% 5% 0%;
+  border-radius: 8%;
+  display: inline-block;
+  line-height: 250%;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  background-color: #ff006e;
+  padding: 0 5%;
+}
+
+.skillHead {
+  text-align: center;
+  color: #ff006e;
+  font-family: "Tillana", cursive;
+  letter-spacing: 0.5vw;
+}
+
+.skillSubH {
+  list-style: none;
+  font-size: 160%;
+  font-family: "Orbitron", sans-serif;
+}
+
+.mySkills {
+  margin-left: 3%;
+  background-color: rgba(24, 24, 23, 0.5);
+}
+
+.contacts {
+  list-style: none;
+  display: flex;
+}
+
+/* Contact styling */
+.footerDiv {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 9%;
+}
+
+.getInTouch {
+  color: #ff006e;
+  text-align: right;
+}
+
+.contact {
+  position: relative;
+  background-color: rgba(0 0 0 0);
+  margin-left: 3vw;
+  border-radius: 6% 6% 6% 6%;
+  line-height: 90%;
+  -webkit-transition: color 0.3s;
+  padding: 20%;
+}
+
+.contact:hover {
+  background-color: fuchsia;
+  color: aqua;
+  transition-property: background;
+  border-radius: 50%;
+}
+
+.fab,
+.fas {
+  font-size: 200%;
+  color: lemonchiffon;
+}
+
+
+/* MY Work/Project */
+.headDiv {
+  margin-top: 3%;
+  font-family: "Orbitron", sans-serif;
+  }
+
+.workHeading1 {
+  font-size: 200%;
+  color: #ff006e;
+}
+
+.workHeading2 {
+  font-size: 300%;
+  color: aqua;
+}
+
+.projectDiv {
+  margin-top: 8%;
+  padding: 2%;
+}
+
+.workLink {
+  text-decoration: none;
+  color: #ff006e;
+  margin: 0%;
+  font-style: italic;
+}
+
+.workLink:hover {
+  color: lemonchiffon;
+}
+
+/* Fun Fact */
+.funF {
+  font-size: 120%;
+  color: white;
+}
+
+.fun {
+  margin: 4% 0%;
+}
+
+.funP {
+  font-family: "Orbitron", sans-serif;
+}
+
+.funSpan1 {
+  font-size: 200%;
+  color: lemonchiffon;
+}
+
+.funSpan2 {
+  font-size: 200%;
+  color: #F5FF90;
+}
+
+.funSpan3 {
+  font-size: 200%;
+  color: #ff006e;
+}
+
+.funList {
+  margin-bottom: 3%;
+  color: #ff006fab;
+}
+
+.a {
+  background-color: aqua;
+  padding: 3%;
+}
+
+.b {
+  background-color: #ff006e;
+  padding: 3%;
+  color: lemonchiffon;
+}
