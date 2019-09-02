@@ -1,9 +1,3 @@
-// $(function() {
-//   setInterval(function() {
-//     $('#slider .slides').animate({'margin-left': '-=90%'}, 1000);
-//   }, 3000);
-// });
-
 $(document).ready(function () {
   //rotation speed and timer
   var speed = 5000;
